@@ -1,0 +1,625 @@
+[
+  {
+    "id": 1,
+    "name": "Acne",
+    "title": "Memahami Acne",
+    "image": "/images/acne.jpg",
+    "description": "Acne adalah kondisi kulit yang terjadi ketika folikel rambut tersumbat oleh minyak dan sel kulit mati, seringkali menyebabkan peradangan.",
+    "tags": ["Peradangan", "Infeksi Bakteri"],
+    "detailed-desc": "Acne adalah kondisi kulit yang terjadi ketika folikel rambut tersumbat oleh minyak dan sel kulit mati, seringkali menyebabkan peradangan.",
+    "gejala": [
+      "Gejala acne bervariasi tergantung pada tingkat keparahannya, meliputi:",
+      "* **Komedo Putih:** Folikel rambut yang tersumbat dan tertutup.",
+      "* **Komedo Hitam:** Folikel rambut tersumbat yang terbuka ke permukaan kulit.",
+      "* **Papula:** Benjolan kecil berwarna kemerahan dan lunak.",
+      "* **Pustula (Jerawat nanah):** Papula dengan nanah di puncaknya.",
+      "* **Nodul:** Benjolan besar, padat, dan nyeri di bawah permukaan kulit.",
+      "* **Kista:** Benjolan berisi nanah yang menyakitkan di bawah kulit dan dapat meninggalkan bekas luka."
+    ],
+    "penyebab": [
+      "**Acne terbentuk ketika kombinasi dari empat faktor utama terjadi:**",
+      "1. Produksi minyak (sebum) yang berlebihan.",
+      "2. Folikel rambut yang tersumbat oleh sel kulit mati dan minyak.",
+      "3. Pertumbuhan bakteri *Propionibacterium acnes*.",
+      "4. Peradangan atau inflamasi.",
+      "Perubahan hormonal, stres, dan faktor genetik juga memainkan peran penting dalam memicu acne."
+    ],
+    "cara_penanganan": [
+      "Penanganan acne bertujuan untuk mengurangi produksi minyak, mempercepat pergantian sel kulit, melawan infeksi bakteri, dan mengurangi peradangan.",
+      "* **Perawatan Topikal:** Penggunaan krim atau gel yang mengandung benzoil peroksida, asam salisilat, atau retinoid.",
+      "* **Obat Oral:** Untuk kasus sedang hingga parah, dokter mungkin meresepkan antibiotik, pil KB (untuk wanita), atau isotretinoin.",
+      "* **Terapi Lainnya:** Terapi cahaya, chemical peeling, dan ekstraksi komedo oleh profesional.",
+      "**Sangat penting untuk tidak memencet jerawat karena dapat memperburuk peradangan dan menyebabkan bekas luka permanen.**"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Actinic Keratosis",
+    "title": "Mengenal Actinic Keratosis",
+    "image": "/images/actinic-keratosis.jpg",
+    "description": "Actinic Keratosis adalah bercak kulit kasar dan bersisik yang berkembang setelah bertahun-tahun terpapar sinar matahari dan berpotensi menjadi kanker kulit.",
+    "tags": ["Prakanker", "Kerusakan UV"],
+    "detailed-desc": "Actinic Keratosis adalah bercak kulit kasar dan bersisik yang berkembang setelah bertahun-tahun terpapar sinar matahari dan berpotensi menjadi kanker kulit.",
+    "gejala": [
+      "Lesi actinic keratosis biasanya muncul pada area yang sering terpapar matahari.",
+      "* Bercak kulit yang terasa kasar dan kering saat disentuh.",
+      "* Ukurannya bervariasi dari titik kecil hingga diameter lebih dari 2 cm.",
+      "* Warnanya bisa cokelat, merah muda, atau sewarna kulit.",
+      "* Terkadang terasa gatal atau seperti terbakar."
+    ],
+    "penyebab": [
+      "**Penyebab utama actinic keratosis adalah paparan kronis terhadap radiasi ultraviolet (UV) dari matahari atau tanning bed.** Sinar UV merusak DNA sel kulit (keratinosit), menyebabkan pertumbuhan sel yang tidak normal. Orang dengan kulit terang, rambut pirang atau merah, dan mata biru atau hijau memiliki risiko lebih tinggi."
+    ],
+    "cara_penanganan": [
+      "Karena berpotensi menjadi kanker kulit (karsinoma sel skuamosa), penanganan sangat dianjurkan.",
+      "* **Krioterapi:** Membekukan lesi dengan nitrogen cair.",
+      "* **Krim atau Gel Topikal:** Penggunaan obat resep seperti 5-fluorouracil, imiquimod, atau ingenol mebutate.",
+      "* **Terapi Fotodinamik (PDT):** Mengoleskan agen fotosensitisasi ke kulit yang kemudian diaktifkan dengan cahaya.",
+      "* **Kuretase atau Laser:** Mengikis atau menghilangkan lesi dengan laser.",
+      "**Penggunaan tabir surya setiap hari adalah cara pencegahan terbaik.**"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Benign Tumors",
+    "title": "Memahami Tumor Jinak (Benign Tumors)",
+    "image": "/images/benign-tumors.jpg",
+    "description": "Tumor jinak kulit adalah pertumbuhan sel non-kanker yang tidak menyebar ke bagian tubuh lain, seperti tahi lalat atau lipoma.",
+    "tags": ["Pertumbuhan Jinak", "Non-Kanker"],
+    "detailed-desc": "Tumor jinak kulit adalah pertumbuhan sel non-kanker yang tidak menyebar ke bagian tubuh lain, seperti tahi lalat atau lipoma.",
+    "gejala": [
+      "Gejala sangat bervariasi tergantung jenisnya, namun umumnya:",
+      "* Pertumbuhan baru pada kulit yang cenderung tumbuh lambat.",
+      "* Biasanya tidak menimbulkan rasa sakit, kecuali jika tergesek atau teriritasi.",
+      "* Contoh umum termasuk tahi lalat (nevi), kista sebasea, lipoma (tumor lemak), dan keratosis seboroik."
+    ],
+    "penyebab": [
+      "**Tumor jinak terjadi ketika sel-sel di kulit tumbuh secara tidak normal dan tidak terkendali, tetapi tidak memiliki kemampuan untuk menyerang jaringan lain.** Penyebab pastinya seringkali tidak diketahui, tetapi faktor genetik dan penuaan seringkali berperan."
+    ],
+    "cara_penanganan": [
+      "Sebagian besar tumor jinak tidak memerlukan penanganan medis.",
+      "* **Observasi:** Cukup diawasi jika tidak mengganggu.",
+      "* **Eksisi (Pengangkatan):** Tumor dapat diangkat melalui pembedahan kecil jika mengganggu secara kosmetik, menyebabkan ketidaknyamanan, atau jika ada keraguan apakah pertumbuhan itu jinak.",
+      "**Meskipun jinak, setiap pertumbuhan kulit baru atau yang berubah harus diperiksa oleh dokter untuk menyingkirkan kemungkinan kanker.**"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bullous Disease",
+    "title": "Mengenal Penyakit Bulosa (Bullous Disease)",
+    "image": "/images/bullous-disease.jpg",
+    "description": "Penyakit bulosa adalah sekelompok kelainan kulit autoimun yang ditandai dengan lepuh besar berisi cairan (bula) pada kulit dan selaput lendir.",
+    "tags": ["Autoimun", "Lepuh"],
+    "detailed-desc": "Penyakit bulosa adalah sekelompok kelainan kulit autoimun yang ditandai dengan lepuh besar berisi cairan (bula) pada kulit dan selaput lendir.",
+    "gejala": [
+      "Gejala utama adalah munculnya lepuh (bula) yang besar dan berisi cairan.",
+      "* Lepuh bisa tegang atau lembek dan mudah pecah.",
+      "* Kulit di sekitar lepuh bisa tampak normal atau kemerahan.",
+      "* Seringkali terasa sangat gatal atau nyeri.",
+      "* Dapat muncul di mana saja, termasuk di dalam mulut atau area genital.",
+      "Contoh penyakitnya adalah Pemfigoid Bulosa dan Pemfigus Vulgaris."
+    ],
+    "penyebab": [
+      "**Penyakit ini disebabkan oleh malfungsi sistem kekebalan tubuh (autoimun), di mana antibodi secara keliru menyerang protein yang berfungsi sebagai 'lem' perekat antar lapisan kulit.** Serangan ini menyebabkan lapisan kulit terpisah dan membentuk lepuh berisi cairan."
+    ],
+    "cara_penanganan": [
+      "Penanganan berfokus pada pengendalian sistem imun dan penyembuhan kulit.",
+      "* **Kortikosteroid:** Baik dalam bentuk krim (untuk kasus ringan) maupun pil (untuk kasus berat) untuk menekan peradangan.",
+      "* **Obat Imunosupresan:** Obat seperti azathioprine atau methotrexate untuk menekan respons autoimun.",
+      "* **Perawatan Luka:** Menjaga kebersihan area lepuh yang pecah untuk mencegah infeksi sekunder.",
+      "**Penanganan kondisi ini memerlukan pengawasan medis jangka panjang oleh dokter kulit.**"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Candidiasis",
+    "title": "Infeksi Candidiasis",
+    "image": "/images/candidiasis.jpg",
+    "description": "Candidiasis adalah infeksi jamur yang disebabkan oleh ragi Candida, yang dapat menyebabkan ruam merah gatal di area kulit yang hangat dan lembab.",
+    "tags": ["Infeksi Jamur"],
+    "detailed-desc": "Candidiasis adalah infeksi jamur yang disebabkan oleh ragi Candida, yang dapat menyebabkan ruam merah gatal di area kulit yang hangat dan lembab.",
+    "gejala": [
+      "* Ruam merah terang yang terasa sangat gatal atau perih.",
+      "* Seringkali muncul di lipatan kulit (ketiak, selangkangan, bawah payudara, lipatan perut).",
+      "* Tepi ruam bisa tidak rata dan mungkin terdapat lesi satelit (bintik-bintik merah kecil) di sekitarnya.",
+      "* Pada bayi, ini adalah penyebab umum ruam popok."
+    ],
+    "penyebab": [
+      "**Infeksi ini disebabkan oleh pertumbuhan berlebih dari jamur Candida albicans.** Jamur ini secara alami ada di kulit, namun pertumbuhannya bisa tak terkendali dalam kondisi berikut:",
+      "* Lingkungan yang hangat dan lembab.",
+      "* Sistem kekebalan tubuh yang lemah (misalnya pada penderita diabetes atau HIV).",
+      "* Penggunaan antibiotik jangka panjang yang mengganggu keseimbangan mikroba kulit."
+    ],
+    "cara_penanganan": [
+      "Penanganan bertujuan untuk membunuh jamur dan menjaga kulit tetap kering.",
+      "* **Krim atau Salep Antijamur:** Produk yang dijual bebas atau dengan resep seperti clotrimazole atau miconazole.",
+      "* **Menjaga Kebersihan dan Kekeringan:** Mengeringkan area lipatan kulit secara menyeluruh setelah mandi dan menggunakan pakaian yang longgar dan menyerap keringat.",
+      "* **Obat Antijamur Oral:** Mungkin diperlukan untuk infeksi yang parah atau berulang.",
+      "**Penting untuk menyelesaikan seluruh durasi pengobatan sesuai anjuran untuk mencegah infeksi kembali.**"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Drug Eruption",
+    "title": "Mengenal Erupsi Obat (Drug Eruption)",
+    "image": "/images/drug-eruption.jpg",
+    "description": "Drug Eruption adalah reaksi kulit yang merugikan terhadap obat tertentu, yang muncul sebagai ruam dengan berbagai bentuk dan ukuran.",
+    "tags": ["Reaksi Obat", "Hipersensitivitas"],
+    "detailed-desc": "Drug Eruption adalah reaksi kulit yang merugikan terhadap obat tertentu, yang muncul sebagai ruam dengan berbagai bentuk dan ukuran.",
+    "gejala": [
+      "Manifestasi erupsi obat sangat beragam:",
+      "* **Ruam Morbiliformis:** Jenis paling umum, tampak seperti ruam campak dengan bintik-bintik merah yang menyebar luas.",
+      "* **Urtikaria (Biduran):** Benjolan merah yang gatal dan menonjol.",
+      "* **Erupsi Tetap (Fixed Drug Eruption):** Munculnya satu atau beberapa lesi bulat berwarna ungu atau cokelat di lokasi yang sama setiap kali obat pemicu digunakan.",
+      "* **Reaksi Berat:** Seperti Sindrom Stevens-Johnson (SJS) yang mengancam jiwa, ditandai dengan lepuh dan pengelupasan kulit yang luas."
+    ],
+    "penyebab": [
+      "**Erupsi obat adalah reaksi hipersensitivitas atau efek samping dari suatu obat yang dikonsumsi.** Ini bukan disebabkan oleh penyakit, melainkan respons sistem kekebalan tubuh terhadap molekul obat. Hampir semua obat bisa menjadi pemicu, namun yang paling sering adalah antibiotik (seperti penisilin), antikonvulsan, dan obat antiinflamasi nonsteroid (OAINS)."
+    ],
+    "cara_penanganan": [
+      "Langkah terpenting adalah identifikasi dan penghentian obat penyebab.",
+      "* **Hentikan Obat Pemicu:** Ini adalah langkah pertama dan paling krusial, harus di bawah pengawasan dokter.",
+      "* **Antihistamin:** Untuk mengurangi rasa gatal.",
+      "* **Kortikosteroid Topikal atau Oral:** Untuk menekan peradangan pada ruam.",
+      "* **Perawatan Pendukung:** Untuk reaksi berat, rawat inap mungkin diperlukan untuk mengelola cairan dan mencegah infeksi.",
+      "**Selalu informasikan riwayat alergi obat Anda kepada setiap dokter yang Anda kunjungi.**"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Eczema",
+    "title": "Memahami Eczema",
+    "image": "/images/eczema.jpg",
+    "description": "Eczema adalah istilah umum untuk sekelompok kondisi yang menyebabkan kulit menjadi meradang atau iritasi, kering, dan gatal.",
+    "tags": ["Peradangan", "Kondisi Atopik"],
+    "detailed-desc": "Eczema adalah istilah umum untuk sekelompok kondisi yang menyebabkan kulit menjadi meradang atau iritasi, kering, dan gatal.",
+    "gejala": [
+      "Gejala utama eczema (dermatitis atopik) adalah siklus gatal-garuk.",
+      "* Kulit sangat kering, pecah-pecah, dan bersisik.",
+      "* Gatal yang intens, terutama di malam hari.",
+      "* Bercak merah hingga cokelat keabu-abuan, terutama pada tangan, kaki, pergelangan kaki, leher, dan lipatan siku atau lutut.",
+      "* Kulit yang menebal dan kasar akibat garukan kronis."
+    ],
+    "penyebab": [
+      "**Eczema disebabkan oleh kombinasi faktor genetik dan lingkungan yang melemahkan fungsi pelindung (barrier) kulit.** Hal ini membuat kulit kehilangan kelembapan dan menjadi rentan terhadap iritan, alergen, dan bakteri. Pemicu umum meliputi:",
+      "* Alergen seperti tungau debu, serbuk sari, atau bulu hewan.",
+      "* Iritan seperti sabun deterjen, parfum, atau bahan pakaian tertentu (wol).",
+      "* Stres dan perubahan cuaca."
+    ],
+    "cara_penanganan": [
+      "Penanganan berfokus pada pemulihan pelindung kulit dan pengendalian peradangan.",
+      "* **Pelembap (Emolien):** **Menggunakan pelembap berkualitas baik beberapa kali sehari adalah kunci utama penanganan eczema.**",
+      "* **Kortikosteroid Topikal:** Krim atau salep resep untuk mengurangi peradangan saat kambuh.",
+      "* **Antihistamin Oral:** Dapat membantu mengurangi gatal, terutama saat tidur.",
+      "* **Menghindari Pemicu:** Mengidentifikasi dan menghindari faktor-faktor yang memperburuk kondisi Anda.",
+      "* **Terapi Lanjutan:** Untuk kasus berat, dokter dapat merekomendasikan fototerapi atau obat imunosupresan oral."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Infestations/Bites",
+    "title": "Infestasi dan Gigitan Serangga",
+    "image": "/images/infestations-bites.jpg",
+    "description": "Reaksi kulit terhadap gigitan atau sengatan serangga, serta infestasi oleh parasit seperti tungau, menyebabkan gatal, bengkak, dan kemerahan.",
+    "tags": ["Infestasi Parasit", "Gigitan Serangga"],
+    "detailed-desc": "Reaksi kulit terhadap gigitan atau sengatan serangga, serta infestasi oleh parasit seperti tungau, menyebabkan gatal, bengkak, dan kemerahan.",
+    "gejala": [
+      "Gejala tergantung pada jenis serangga atau parasit:",
+      "* **Gigitan Nyamuk/Semut:** Benjolan merah (bentol) yang gatal dan bengkak di lokasi gigitan.",
+      "* **Kudis (Scabies):** Disebabkan oleh tungau, menimbulkan rasa gatal yang luar biasa hebat terutama di malam hari, dengan jejak seperti terowongan kecil di kulit sela-sela jari, pergelangan tangan, dan lipatan tubuh.",
+      "* **Kutu Rambut/Badan:** Rasa gatal dan sensasi ada yang bergerak di kulit kepala atau badan."
+    ],
+    "penyebab": [
+      "**Gejala disebabkan oleh reaksi tubuh terhadap air liur, racun, atau kotoran yang disuntikkan atau ditinggalkan oleh serangga/parasit.** Reaksi ini bisa berupa iritasi lokal atau respons alergi. Infestasi seperti kudis menyebar melalui kontak kulit-ke-kulit yang erat."
+    ],
+    "cara_penanganan": [
+      "* **Untuk Gigitan Umum:**",
+      "  * Bersihkan area dengan sabun dan air.",
+      "  * Kompres dingin untuk mengurangi bengkak.",
+      "  * Oleskan krim hidrokortison atau losion calamine untuk mengurangi gatal.",
+      "* **Untuk Infestasi (Kudis/Kutu):**",
+      "  * **Perlu pengobatan medis spesifik dengan losion atau krim resep (misalnya permethrin) yang harus dioleskan ke seluruh tubuh.**",
+      "  * Semua pakaian, sprei, dan handuk harus dicuci dengan air panas.",
+      "  * Semua anggota keluarga yang tinggal serumah mungkin perlu diobati secara bersamaan.",
+      "**Jangan menggaruk gigitan karena dapat menyebabkan infeksi bakteri sekunder.**"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lichen Planus",
+    "title": "Mengenal Lichen Planus",
+    "image": "/images/lichen-planus.jpg",
+    "description": "Lichen planus adalah kondisi peradangan yang dapat mempengaruhi kulit, rambut, kuku, dan selaput lendir, menyebabkan benjolan gatal atau bercak putih.",
+    "tags": ["Autoimun", "Peradangan"],
+    "detailed-desc": "Lichen planus adalah kondisi peradangan yang dapat mempengaruhi kulit, rambut, kuku, dan selaput lendir, menyebabkan benjolan gatal atau bercak putih.",
+    "gejala": [
+      "* **Pada Kulit:** Benjolan (papula) berwarna ungu, datar, berbentuk poligonal, dan sangat gatal. Sering muncul di pergelangan tangan, pergelangan kaki, dan punggung bawah.",
+      "* **Pada Mulut:** Bercak putih seperti jaring laba-laba di bagian dalam pipi, atau luka yang nyeri.",
+      "* **Pada Kuku:** Penipisan, kerutan, atau bahkan kerontokan kuku.",
+      "* **Pada Kulit Kepala:** Dapat menyebabkan kerontokan rambut permanen."
+    ],
+    "penyebab": [
+      "**Lichen planus adalah penyakit autoimun di mana sistem kekebalan tubuh menyerang sel-sel kulit atau selaput lendir.** Penyebab pasti serangan ini tidak diketahui, tetapi terkadang dapat dipicu oleh:",
+      "* Infeksi virus hepatitis C.",
+      "* Vaksin flu.",
+      "* Obat-obatan tertentu (misalnya untuk tekanan darah tinggi atau radang sendi)."
+    ],
+    "cara_penanganan": [
+      "Tidak ada obat untuk menyembuhkan lichen planus, tetapi pengobatan bertujuan untuk mengendalikan gejala.",
+      "* **Kortikosteroid Topikal:** Krim atau salep resep adalah lini pertama pengobatan untuk mengurangi gatal dan ruam.",
+      "* **Injeksi Kortikosteroid:** Disuntikkan langsung ke lesi yang membandel.",
+      "* **Kortikosteroid Oral atau Retinoid:** Untuk kasus yang parah atau menyebar luas.",
+      "* **Antihistamin:** Untuk membantu mengendalikan rasa gatal.",
+      "**Kondisi ini bisa sembuh dengan sendirinya, tetapi bisa juga berlangsung selama bertahun-tahun dan sering kambuh.**"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Lupus",
+    "title": "Memahami Lupus Kulit",
+    "image": "/images/lupus.jpg",
+    "description": "Lupus adalah penyakit autoimun kronis yang dapat menyebabkan peradangan di seluruh tubuh, termasuk manifestasi kulit yang khas seperti ruam kupu-kupu.",
+    "tags": ["Autoimun", "Penyakit Sistemik"],
+    "detailed-desc": "Lupus adalah penyakit autoimun kronis yang dapat menyebabkan peradangan di seluruh tubuh, termasuk manifestasi kulit yang khas seperti ruam kupu-kupu.",
+    "gejala": [
+      "Manifestasi kulit pada lupus sangat bervariasi:",
+      "* **Ruam Malar (Ruam Kupu-kupu):** **Ini adalah tanda paling khas, berupa kemerahan yang membentang di pipi dan pangkal hidung.**",
+      "* **Lupus Diskoid:** Lesi bulat, menonjol, bersisik yang dapat menyebabkan jaringan parut dan perubahan warna kulit permanen.",
+      "* **Fotosensitivitas:** Ruam kulit yang memburuk setelah terpapar sinar matahari.",
+      "* **Ulkus Mulut atau Hidung:** Luka yang biasanya tidak nyeri."
+    ],
+    "penyebab": [
+      "**Lupus adalah penyakit autoimun sistemik, di mana sistem kekebalan tubuh menyerang jaringan dan organ tubuhnya sendiri, termasuk kulit.** Faktor genetik dan pemicu lingkungan seperti infeksi, obat-obatan tertentu, dan paparan sinar matahari berperan dalam perkembangannya."
+    ],
+    "cara_penanganan": [
+      "Penanganan ditujukan untuk mengendalikan aktivitas penyakit dan mencegah kerusakan organ.",
+      "* **Perlindungan dari Matahari:** **Menghindari paparan sinar matahari dan menggunakan tabir surya berspektrum luas adalah wajib.**",
+      "* **Kortikosteroid Topikal:** Untuk mengobati lesi kulit individual.",
+      "* **Obat Antimalaria:** Obat seperti hidroksiklorokuin sangat efektif untuk lupus kulit.",
+      "* **Obat Imunosupresan Sistemik:** Diperlukan jika lupus juga mempengaruhi organ dalam.",
+      "**Lupus adalah kondisi kronis yang memerlukan pengelolaan jangka panjang oleh tim dokter.**"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Moles",
+    "title": "Mengenal Tahi Lalat (Moles)",
+    "image": "/images/moles.jpg",
+    "description": "Tahi lalat (moles) adalah pertumbuhan umum pada kulit yang terjadi ketika sel-sel pigmen (melanosit) tumbuh dalam kelompok.",
+    "tags": ["Pertumbuhan Pigmen", "Jinak"],
+    "detailed-desc": "Tahi lalat (moles) adalah pertumbuhan umum pada kulit yang terjadi ketika sel-sel pigmen (melanosit) tumbuh dalam kelompok.",
+    "gejala": [
+      "* Biasanya berupa bintik kecil berwarna cokelat atau hitam.",
+      "* Bisa datar atau menonjol, bulat atau oval, dan biasanya berukuran kurang dari 6 milimeter.",
+      "* Sebagian besar muncul pada masa kanak-kanak dan remaja.",
+      "* **Tahi lalat yang normal cenderung simetris, memiliki batas yang rata, satu warna seragam, dan tidak berubah dari waktu ke waktu.**"
+    ],
+    "penyebab": [
+      "**Tahi lalat terbentuk ketika melanosit, sel penghasil pigmen kulit, tumbuh dalam satu kelompok bukannya menyebar di seluruh kulit.** Faktor genetik dan paparan sinar matahari dapat mempengaruhi jumlah dan jenis tahi lalat yang dimiliki seseorang."
+    ],
+    "cara_penanganan": [
+      "Sebagian besar tahi lalat tidak berbahaya dan tidak memerlukan perawatan.",
+      "* **Observasi:** Penting untuk memeriksa kulit Anda secara teratur.",
+      "* **Pengangkatan (Eksisi):** Tahi lalat dapat diangkat jika mengganggu secara kosmetik, sering teriritasi, atau menunjukkan tanda-tanda yang mencurigakan.",
+      "* **Biopsi:** **Setiap tahi lalat yang menunjukkan perubahan harus dievaluasi oleh dokter, dan jika perlu, diangkat untuk diperiksa di bawah mikroskop (biopsi) untuk menyingkirkan melanoma (kanker kulit).** Gunakan metode ABCDE untuk memantau:",
+      "  * **A**simetri (Asymmetry)",
+      "  * **B**order (Batas tidak rata)",
+      "  * **C**olor (Warna tidak seragam)",
+      "  * **D**iameter (Diameter > 6mm)",
+      "  * **E**volving (Berkembang atau berubah)"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Psoriasis",
+    "title": "Memahami Psoriasis",
+    "image": "/images/psoriasis.jpg",
+    "description": "Psoriasis adalah penyakit kulit kronis yang ditandai dengan bercak kulit abnormal, tebal, merah, dan bersisik keperakan.",
+    "tags": ["Autoimun", "Peradangan Kronis"],
+    "detailed-desc": "Psoriasis adalah penyakit kulit kronis yang ditandai dengan bercak kulit abnormal, tebal, merah, dan bersisik keperakan.",
+    "gejala": [
+      "* **Plak Psoriasis (Paling Umum):** Bercak kulit merah yang menonjol (plak) ditutupi dengan sisik tebal berwarna keperakan.",
+      "* Rasa gatal, perih, atau terbakar pada plak.",
+      "* Kulit kering dan pecah-pecah yang bisa berdarah.",
+      "* Kuku yang menebal, berlubang, atau terlepas dari dasarnya.",
+      "* Pada beberapa kasus, disertai radang sendi (artritis psoriatik)."
+    ],
+    "penyebab": [
+      "**Psoriasis adalah penyakit autoimun kronis yang disebabkan oleh percepatan siklus hidup sel kulit.** Sistem kekebalan tubuh yang terlalu aktif mengirimkan sinyal yang salah, menyebabkan sel-sel kulit tumbuh terlalu cepat (dalam hitungan hari, bukan minggu). Sel-sel ini kemudian menumpuk di permukaan, membentuk plak. Faktor genetik sangat berperan, dan pemicu kambuhnya bisa berupa stres, infeksi, atau cedera kulit."
+    ],
+    "cara_penanganan": [
+      "Penanganan bertujuan untuk menghentikan penumpukan sel kulit dan mengurangi peradangan.",
+      "* **Terapi Topikal:** Krim kortikosteroid, analog vitamin D, retinoid, atau pelembap tebal.",
+      "* **Fototerapi (Terapi Cahaya):** Paparan terkontrol terhadap sinar ultraviolet B (UVB) atau PUVA (psoralen plus UVA).",
+      "* **Obat Sistemik atau Biologis:** Untuk kasus sedang hingga berat, obat minum atau suntik yang menargetkan sistem kekebalan tubuh.",
+      "**Psoriasis adalah kondisi seumur hidup yang dapat dikendalikan dengan penanganan yang tepat, bukan disembuhkan.**"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Rosacea",
+    "title": "Mengenal Rosacea",
+    "image": "/images/rosacea.jpg",
+    "description": "Rosacea adalah kondisi kulit umum yang menyebabkan kemerahan dan pembuluh darah yang terlihat di wajah, seringkali disertai benjolan kecil berisi nanah.",
+    "tags": ["Peradangan Kronis", "Vaskular"],
+    "detailed-desc": "Rosacea adalah kondisi kulit umum yang menyebabkan kemerahan dan pembuluh darah yang terlihat di wajah, seringkali disertai benjolan kecil berisi nanah.",
+    "gejala": [
+      "Rosacea memiliki empat subtipe utama dengan gejala yang berbeda:",
+      "1. **Kemerahan dan Flushing:** Wajah mudah memerah dan kemerahan persisten di bagian tengah wajah.",
+      "2. **Benjolan dan Jerawat (Papulopustular):** Munculnya benjolan merah dan pustula yang mirip jerawat.",
+      "3. **Penebalan Kulit (Phymatous):** Kulit menebal dan bergelombang, terutama di area hidung (rhinophyma).",
+      "4. **Rosacea Mata (Ocular):** Mata merah, kering, iritasi, dan kelopak mata bengkak."
+    ],
+    "penyebab": [
+      "**Penyebab pasti rosacea tidak diketahui, tetapi diduga merupakan kombinasi dari faktor keturunan, lingkungan, dan respons peradangan yang tidak normal.** Pemicu umum yang dapat memperburuk gejala termasuk:",
+      "* Paparan sinar matahari.",
+      "* Makanan panas atau pedas.",
+      "* Alkohol, terutama anggur merah.",
+      "* Stres emosional dan perubahan suhu ekstrem."
+    ],
+    "cara_penanganan": [
+      "Penanganan berfokus pada pengendalian gejala dan penghindaran pemicu.",
+      "* **Perlindungan Matahari:** Penggunaan tabir surya setiap hari sangat penting.",
+      "* **Obat Topikal:** Krim atau gel yang mengandung metronidazole, asam azelaic, atau ivermectin untuk mengurangi kemerahan dan benjolan.",
+      "* **Antibiotik Oral:** Dosis rendah doksisiklin sering digunakan karena efek anti-inflamasinya.",
+      "* **Terapi Laser dan Cahaya:** Sangat efektif untuk mengurangi kemerahan persisten dan pembuluh darah yang terlihat.",
+      "**Rosacea adalah kondisi kronis yang dapat dikelola dengan baik melalui identifikasi pemicu dan perawatan yang konsisten.**"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Seborrheic Keratoses",
+    "title": "Mengenal Seborrheic Keratoses",
+    "image": "/images/seborrheic-keratoses.jpg",
+    "description": "Seborrheic Keratoses adalah salah satu jenis pertumbuhan kulit jinak (non-kanker) yang paling umum pada orang dewasa, tampak seperti lilin atau kutil.",
+    "tags": ["Pertumbuhan Jinak", "Terkait Penuaan"],
+    "detailed-desc": "Seborrheic Keratoses adalah salah satu jenis pertumbuhan kulit jinak (non-kanker) yang paling umum pada orang dewasa, tampak seperti lilin atau kutil.",
+    "gejala": [
+      "* Tumbuh di permukaan kulit, tampak seperti 'ditempelkan'.",
+      "* Warnanya bervariasi dari cokelat muda, cokelat tua, hingga hitam.",
+      "* Permukaannya bisa licin, berlilin, atau kasar seperti kutil.",
+      "* Bentuknya bulat atau oval.",
+      "* Biasanya muncul di wajah, dada, bahu, atau punggung."
+    ],
+    "penyebab": [
+      "**Penyebab pastinya tidak diketahui, tetapi kondisi ini sangat umum terjadi seiring bertambahnya usia.** Faktor genetik memainkan peran penting, karena seringkali diturunkan dalam keluarga. Pertumbuhan ini bukanlah disebabkan oleh virus dan tidak menular. Paparan sinar matahari mungkin juga berkontribusi pada kemunculannya."
+    ],
+    "cara_penanganan": [
+      "**Karena bersifat jinak, seborrheic keratoses tidak memerlukan penanganan medis.** Namun, pengangkatan dapat dilakukan jika:",
+      "* Mengganggu secara kosmetik.",
+      "* Sering teriritasi oleh pakaian atau perhiasan.",
+      "* Menyebabkan gatal.",
+      "* Diagnosisnya tidak pasti dan perlu dibedakan dari kanker kulit.",
+      "Metode pengangkatan meliputi:",
+      "* **Krioterapi (Pembekuan)**",
+      "* **Elektrokauter (Pembakaran)**",
+      "* **Kuretase (Pengikisan)**"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Skin Cancer",
+    "title": "Memahami Kanker Kulit (Skin Cancer)",
+    "image": "/images/skin-cancer.jpg",
+    "description": "Skin Cancer adalah pertumbuhan sel-sel abnormal di epidermis (lapisan kulit terluar), yang disebabkan oleh kerusakan DNA yang tidak diperbaiki.",
+    "tags": ["Kanker Kulit", "Pertumbuhan Ganas"],
+    "detailed-desc": "Skin Cancer adalah pertumbuhan sel-sel abnormal di epidermis (lapisan kulit terluar), yang disebabkan oleh kerusakan DNA yang tidak diperbaiki.",
+    "gejala": [
+      "Gejala bervariasi berdasarkan jenisnya:",
+      "* **Karsinoma Sel Basal:** Benjolan seperti mutiara atau lilin, atau luka datar berwarna daging atau cokelat.",
+      "* **Karsinoma Sel Skuamosa:** Benjolan merah yang keras, atau lesi datar bersisik dan berkerak.",
+      "* **Melanoma:** **Tanda paling penting adalah tahi lalat yang baru muncul atau tahi lalat lama yang berubah bentuk, ukuran, atau warna (ikuti aturan ABCDE).** Bisa juga muncul sebagai lesi gelap yang tidak biasa."
+    ],
+    "penyebab": [
+      "**Penyebab utama dari semua jenis kanker kulit adalah paparan berlebihan terhadap radiasi ultraviolet (UV) dari sinar matahari atau tanning bed.** Sinar UV merusak DNA dalam sel-sel kulit. Jika kerusakan ini tidak diperbaiki sepenuhnya oleh tubuh, dapat memicu mutasi yang menyebabkan sel tumbuh tak terkendali."
+    ],
+    "cara_penanganan": [
+      "Penanganan sangat bergantung pada jenis, ukuran, kedalaman, dan lokasi kanker.",
+      "* **Eksisi Bedah:** **Metode paling umum, di mana tumor dan sebagian kecil kulit sehat di sekitarnya diangkat.**",
+      "* **Bedah Mohs:** Teknik bedah presisi tinggi untuk area sensitif seperti wajah, dengan tingkat kesembuhan tertinggi.",
+      "* **Kuretase dan Elektrokauter, Krioterapi:** Untuk kanker stadium awal dan non-melanoma.",
+      "* **Terapi Radiasi, Kemoterapi, Terapi Target, dan Imunoterapi:** Untuk kanker stadium lanjut atau yang telah menyebar.",
+      "**Deteksi dini adalah kunci untuk tingkat kelangsungan hidup yang tinggi, terutama untuk melanoma.**"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sun/Sunlight Damage",
+    "title": "Kerusakan Akibat Sinar Matahari",
+    "image": "/images/sun-damage.jpg",
+    "description": "Kerusakan akibat sinar matahari mengacu pada perubahan kulit yang disebabkan oleh paparan radiasi ultraviolet (UV) yang berlebihan, yang mengarah pada penuaan dini dan peningkatan risiko kanker kulit.",
+    "tags": ["Kerusakan UV", "Penuaan Dini"],
+    "detailed-desc": "Kerusakan akibat sinar matahari mengacu pada perubahan kulit yang disebabkan oleh paparan radiasi ultraviolet (UV) yang berlebihan, yang mengarah pada penuaan dini dan peningkatan risiko kanker kulit.",
+    "gejala": [
+      "Gejala kerusakan kulit akibat matahari bersifat kumulatif dan berkembang seiring waktu.",
+      "* **Kerutan Halus dan Dalam:** Terutama di area yang sering terpapar matahari.",
+      "* **Perubahan Pigmentasi:** Munculnya bintik-bintik cokelat (lentigo surya/bintik penuaan), freckles, dan warna kulit yang tidak merata.",
+      "* **Hilangnya Elastisitas Kulit:** Kulit menjadi kendur dan kasar.",
+      "* **Telangiektasis:** Munculnya pembuluh darah kecil seperti jaring laba-laba.",
+      "* **Keratosis Aktinik:** Bercak prakanker yang kasar."
+    ],
+    "penyebab": [
+      "**Disebabkan oleh paparan jangka panjang dan berulang terhadap radiasi UVA dan UVB dari matahari.** Sinar UVA menembus jauh ke dalam kulit dan merusak kolagen serta elastin, yang menyebabkan penuaan. Sinar UVB terutama membakar lapisan atas kulit dan merupakan penyebab utama kanker kulit."
+    ],
+    "cara_penanganan": [
+      "Fokus utama adalah pencegahan dan perbaikan kosmetik.",
+      "* **Pencegahan:** **Penggunaan tabir surya berspektrum luas dengan SPF 30+ setiap hari adalah hal yang mutlak.** Kenakan pakaian pelindung dan hindari matahari tengah hari.",
+      "* **Perawatan Topikal:** Penggunaan retinoid (seperti tretinoin) dapat membantu memperbaiki tekstur kulit dan mengurangi kerutan halus.",
+      "* **Prosedur Kosmetik:** Chemical peeling, terapi laser, dan microneedling dapat membantu mengurangi tanda-tanda kerusakan akibat sinar matahari.",
+      "**Kerusakan yang sudah terjadi sebagian besar tidak dapat diubah sepenuhnya, sehingga pencegahan sangatlah penting.**"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tinea",
+    "title": "Infeksi Tinea (Kurap)",
+    "image": "/images/tinea.jpg",
+    "description": "Tinea, juga dikenal sebagai kurap, adalah infeksi jamur pada kulit, rambut, atau kuku yang ditandai dengan ruam merah berbentuk cincin yang gatal.",
+    "tags": ["Infeksi Jamur", "Menular"],
+    "detailed-desc": "Tinea, juga dikenal sebagai kurap, adalah infeksi jamur pada kulit, rambut, atau kuku yang ditandai dengan ruam merah berbentuk cincin yang gatal.",
+    "gejala": [
+      "Gejala bervariasi berdasarkan lokasi infeksi:",
+      "* **Tinea Corporis (Badan):** **Ruam klasik berbentuk cincin (ringworm) yang merah, bersisik, dan gatal, dengan bagian tengah yang cenderung jernih.**",
+      "* **Tinea Pedis (Kaki/Kutu Air):** Kulit bersisik, pecah-pecah, dan gatal di antara jari-jari kaki atau telapak kaki.",
+      "* **Tinea Cruris (Selangkangan/Jock Itch):** Ruam merah gatal di area selangkangan dan paha bagian dalam.",
+      "* **Tinea Capitis (Kulit Kepala):** Bercak botak yang bersisik, terkadang dengan titik-titik hitam (rambut yang patah)."
+    ],
+    "penyebab": [
+      "**Disebabkan oleh sekelompok jamur yang disebut dermatofita.** Jamur ini memakan keratin, protein yang ditemukan di kulit, rambut, dan kuku. Infeksi ini sangat menular dan dapat menyebar melalui:",
+      "* Kontak langsung kulit-ke-kulit dengan orang yang terinfeksi.",
+      "* Kontak dengan hewan yang terinfeksi (kucing, anjing).",
+      "* Kontak dengan benda yang terkontaminasi (handuk, sisir, lantai kamar mandi)."
+    ],
+    "cara_penanganan": [
+      "* **Obat Antijamur Topikal:** Krim, losion, atau bubuk yang mengandung clotrimazole, miconazole, atau terbinafine efektif untuk sebagian besar infeksi kulit.",
+      "* **Obat Antijamur Oral:** Diperlukan untuk infeksi yang luas, tinea pada kuku (onikomikosis), atau tinea pada kulit kepala.",
+      "* **Menjaga Kebersihan:** **Sangat penting untuk menjaga area yang terinfeksi tetap bersih dan kering untuk mencegah penyebaran dan mempercepat penyembuhan.**",
+      "* Ganti kaus kaki dan pakaian dalam setiap hari."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Normal Skin",
+    "title": "Mengenal Kulit Normal",
+    "image": "/images/normal-skin.jpg",
+    "description": "Kulit normal memiliki keseimbangan yang baik antara kandungan minyak dan air, dengan tekstur yang halus dan pori-pori yang hampir tidak terlihat.",
+    "tags": ["Kulit Sehat"],
+    "detailed-desc": "Kulit normal, atau eudermik, bukanlah penyakit, melainkan kondisi kulit yang ideal.",
+    "gejala": [
+      "* **Keseimbangan Sebum:** Tidak terlalu berminyak dan tidak terlalu kering.",
+      "* **Pori-pori Halus:** Pori-pori kecil dan tidak terlihat jelas.",
+      "* **Tekstur Lembut:** Kulit terasa halus dan kenyal saat disentuh.",
+      "* **Warna Merata:** Tidak ada noda atau diskolorasi yang signifikan, warna kulit tampak sehat dan cerah.",
+      "* **Tidak Sensitif:** Jarang mengalami iritasi atau reaksi terhadap produk baru."
+    ],
+    "penyebab": [
+      "**Kulit normal adalah hasil dari kombinasi faktor genetik yang baik dan gaya hidup sehat.** Faktor-faktor yang mendukung kesehatan kulit meliputi:",
+      "* Genetika yang baik.",
+      "* Sirkulasi darah yang efisien.",
+      "* Hidrasi yang cukup (minum air).",
+      "* Diet seimbang yang kaya antioksidan.",
+      "* Manajemen stres yang baik."
+    ],
+    "cara_penanganan": [
+      "Perawatan untuk kulit normal bertujuan untuk mempertahankan kondisinya yang sehat.",
+      "* **Pembersihan:** Gunakan pembersih wajah yang lembut dua kali sehari.",
+      "* **Pelembap:** Gunakan pelembap ringan untuk menjaga keseimbangan hidrasi.",
+      "* **Perlindungan Matahari:** **Ini adalah langkah terpenting. Gunakan tabir surya setiap hari untuk melindungi dari kerusakan UV dan menjaga kulit tetap sehat untuk jangka panjang.**",
+      "* **Eksfoliasi Ringan:** Lakukan eksfoliasi 1-2 kali seminggu untuk mengangkat sel kulit mati.",
+      "**Meskipun disebut 'normal', jenis kulit ini tetap memerlukan perawatan rutin untuk mempertahankannya.**"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Vascular Tumors",
+    "title": "Memahami Tumor Vaskular",
+    "image": "/images/vascular-tumors.jpg",
+    "description": "Tumor vaskular adalah pertumbuhan abnormal yang terdiri dari pembuluh darah atau pembuluh getah bening, mulai dari tanda lahir umum hingga keganasan langka.",
+    "tags": ["Pertumbuhan Vaskular", "Tumor"],
+    "detailed-desc": "Tumor vaskular adalah pertumbuhan abnormal yang terdiri dari pembuluh darah atau pembuluh getah bening, mulai dari tanda lahir umum hingga keganasan langka.",
+    "gejala": [
+      "* Tampak sebagai bercak atau benjolan berwarna merah, ungu, atau kebiruan pada kulit.",
+      "* Contoh jinak yang paling umum adalah **Hemangioma Infantil**, tanda lahir merah yang muncul pada bayi dan biasanya memudar seiring waktu.",
+      "* **Granuloma Piogenik** adalah benjolan merah kecil yang tumbuh cepat dan sangat mudah berdarah.",
+      "* Tumor ganas seperti **Angiosarcoma** bisa tampak seperti memar yang tidak kunjung hilang atau benjolan yang tumbuh."
+    ],
+    "penyebab": [
+      "**Tumor vaskular terjadi karena proliferasi (pertumbuhan cepat) sel endotel, yaitu sel yang melapisi pembuluh darah.** Penyebabnya seringkali tidak diketahui. Beberapa, seperti hemangioma, terkait dengan proses perkembangan pada bayi. Yang lain bisa dipicu oleh cedera atau perubahan hormonal."
+    ],
+    "cara_penanganan": [
+      "Penanganan sangat bergantung pada jenis tumor, ukuran, lokasi, dan dampaknya.",
+      "* **Observasi:** Banyak hemangioma infantil hanya perlu dipantau karena akan menyusut sendiri.",
+      "* **Obat Oral atau Topikal:** Beta-blocker (seperti propranolol) sangat efektif untuk mengobati hemangioma.",
+      "* **Terapi Laser:** Dapat digunakan untuk mengurangi warna merah dan menghentikan pertumbuhan beberapa tumor.",
+      "* **Eksisi Bedah:** **Pengangkatan diperlukan untuk tumor yang menyebabkan masalah fungsional, berdarah terus-menerus, atau dicurigai ganas.**",
+      "**Setiap pertumbuhan vaskular yang tumbuh cepat atau berubah harus dievaluasi oleh dokter.**"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Vasculitis",
+    "title": "Mengenal Vaskulitis Kulit",
+    "image": "/images/vasculitis.jpg",
+    "description": "Vaskulitis adalah peradangan pada pembuluh darah, yang dapat mempengaruhi kulit dan menyebabkan ruam, bintik ungu, dan luka.",
+    "tags": ["Peradangan Vaskular", "Autoimun"],
+    "detailed-desc": "Vaskulitis adalah peradangan pada pembuluh darah, yang dapat mempengaruhi kulit dan menyebabkan ruam, bintik ungu, dan luka.",
+    "gejala": [
+      "Gejala vaskulitis kulit yang paling umum adalah:",
+      "* **Purpura Teraba (Palpable Purpura):** **Ini adalah tanda klasik, berupa bintik-bintik ungu kemerahan yang menonjol (dapat diraba) dan tidak hilang saat ditekan.** Biasanya muncul di area tungkai bawah.",
+      "* Urtikaria (biduran) yang bertahan lebih dari 24 jam.",
+      "* Benjolan yang nyeri, lepuh, atau bahkan borok (ulkus) pada kulit."
+    ],
+    "penyebab": [
+      "**Vaskulitis terjadi ketika sistem kekebalan tubuh secara keliru menyerang dinding pembuluh darah, menyebabkan peradangan.** Peradangan ini dapat menyebabkan pembuluh darah menyempit, tersumbat, atau pecah. Pemicunya bisa berupa:",
+      "* Penyakit autoimun lain (seperti lupus atau rheumatoid arthritis).",
+      "* Reaksi terhadap infeksi (seperti hepatitis).",
+      "* Reaksi terhadap obat.",
+      "Terkadang, penyebabnya tidak diketahui (idiopatik)."
+    ],
+    "cara_penanganan": [
+      "Penanganan bertujuan untuk menekan peradangan dan mengatasi penyebab yang mendasarinya.",
+      "* **Mengatasi Pemicu:** Menghentikan obat penyebab atau mengobati infeksi yang mendasarinya.",
+      "* **Kortikosteroid:** Obat seperti prednison sering digunakan untuk mengendalikan peradangan dengan cepat.",
+      "* **Obat Imunosupresan:** Untuk kasus yang parah atau kronis, obat seperti colchicine, dapsone, atau azathioprine mungkin diperlukan.",
+      "**Vaskulitis bisa menjadi tanda penyakit sistemik, sehingga evaluasi medis yang menyeluruh sangat penting.**"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Vitiligo",
+    "title": "Memahami Vitiligo",
+    "image": "/images/vitiligo.jpg",
+    "description": "Vitiligo adalah penyakit yang menyebabkan hilangnya warna kulit dalam bentuk bercak, terjadi ketika sel-sel penghasil pigmen mati atau berhenti berfungsi.",
+    "tags": ["Autoimun", "Depigmentasi"],
+    "detailed-desc": "Vitiligo adalah penyakit yang menyebabkan hilangnya warna kulit dalam bentuk bercak, terjadi ketika sel-sel penghasil pigmen mati atau berhenti berfungsi.",
+    "gejala": [
+      "* **Munculnya bercak-bercak putih susu (depigmentasi) pada kulit.**",
+      "* Bercak ini paling sering muncul di area yang sering terpapar matahari seperti tangan, kaki, wajah, dan bibir.",
+      "* Dapat juga mempengaruhi rambut (menyebabkan uban prematur), bagian dalam mulut, dan mata.",
+      "* Biasanya simetris, artinya jika muncul di satu sisi tubuh, seringkali muncul juga di sisi yang lain."
+    ],
+    "penyebab": [
+      "**Vitiligo adalah penyakit autoimun di mana sistem kekebalan tubuh menyerang dan menghancurkan melanosit, sel-sel yang bertanggung jawab memproduksi pigmen kulit (melanin).** Ada kecenderungan genetik yang kuat, dan stres, paparan sinar matahari yang parah, atau kontak dengan bahan kimia tertentu dapat memicu atau memperburuk kondisi ini."
+    ],
+    "cara_penanganan": [
+      "Tidak ada obat untuk vitiligo, tetapi penanganan bertujuan untuk mengembalikan warna kulit atau meratakan warna kulit.",
+      "* **Perlindungan Matahari:** **Kulit yang terkena vitiligo tidak memiliki perlindungan melanin dan sangat rentan terbakar matahari, sehingga penggunaan tabir surya adalah wajib.**",
+      "* **Terapi Topikal:** Krim kortikosteroid atau inhibitor kalsineurin dapat membantu mengembalikan pigmen pada bercak kecil.",
+      "* **Fototerapi (Terapi Cahaya):** Terapi dengan sinar UVB pita sempit (NB-UVB) adalah salah satu perawatan paling efektif.",
+      "* **Kamuflase Kosmetik:** Menggunakan riasan khusus untuk menutupi bercak putih.",
+      "* **Depigmentasi:** Untuk kasus vitiligo yang sangat luas, sisa kulit yang masih berpigmen dapat dihilangkan warnanya agar seragam.",
+      "**Dukungan psikologis seringkali penting karena vitiligo dapat berdampak signifikan pada kepercayaan diri.**"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Warts",
+    "title": "Mengenal Kutil (Warts)",
+    "image": "/images/warts.jpg",
+    "description": "Kutil (warts) adalah pertumbuhan kulit kecil dan kasar yang disebabkan oleh infeksi virus dari keluarga human papillomavirus (HPV).",
+    "tags": ["Infeksi Virus", "Menular"],
+    "detailed-desc": "Kutil (warts) adalah pertumbuhan kulit kecil dan kasar yang disebabkan oleh infeksi virus dari keluarga human papillomavirus (HPV).",
+    "gejala": [
+      "* Benjolan kecil dan kasar pada kulit.",
+      "* Warnanya bisa sewarna kulit, putih, merah muda, atau kecokelatan.",
+      "* Terkadang terdapat titik-titik hitam kecil di dalamnya, yang merupakan pembuluh darah yang membeku.",
+      "* **Kutil biasa** sering muncul di jari dan tangan.",
+      "* **Kutil plantar** tumbuh di telapak kaki dan bisa terasa nyeri saat berjalan.",
+      "* **Kutil datar** lebih kecil, lebih halus, dan cenderung tumbuh dalam jumlah banyak."
+    ],
+    "penyebab": [
+      "**Kutil disebabkan oleh infeksi Human Papillomavirus (HPV).** Ada lebih dari 100 jenis HPV. Virus ini masuk ke dalam tubuh melalui luka kecil atau goresan pada kulit. Kutil sangat menular dan dapat menyebar melalui:",
+      "* Kontak langsung dengan kutil.",
+      "* Menyentuh benda yang telah terkontaminasi virus.",
+      "* Menyebar dari satu bagian tubuh ke bagian tubuh lain (autoinokulasi)."
+    ],
+    "cara_penanganan": [
+      "Banyak kutil hilang dengan sendirinya, tetapi bisa memakan waktu berbulan-bulan atau bertahun-tahun. Penanganan bertujuan untuk menghancurkan virus dan menghilangkan pertumbuhan kulit.",
+      "* **Obat Asam Salisilat:** Produk yang dijual bebas dalam bentuk cairan, gel, atau plester yang secara bertahap mengelupas kutil.",
+      "* **Krioterapi:** **Perawatan umum di klinik dokter di mana kutil dibekukan dengan nitrogen cair.**",
+      "* **Kuretase atau Elektrokauter:** Mengikis atau membakar kutil.",
+      "* **Terapi Laser atau Suntikan:** Untuk kutil yang sulit dihilangkan.",
+      "**Penting untuk tidak mencoba mencabut atau memotong kutil sendiri karena dapat menyebabkan penyebaran infeksi.**"
+    ]
+  }
+]
