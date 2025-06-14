@@ -1,5 +1,5 @@
-import Header2 from '../components/Header2.js';
-import Footer from '../components/footer.js';
+import Header2 from "../components/Header2.js";
+import Footer from "../components/footer.js";
 import { showPopup } from "../components/popup.js";
 
 const BACKEND_API_URL = process.env.BACKEND_API_URL;
@@ -58,61 +58,32 @@ export const setupLoginForm = () => {
         }
         if (email && password) {
           try {
-            // Kirim permintaan login ke backend
-            const loginResponse = await fetch("http://localhost:9001/login", {
+            // const res = await fetch('https://delightful-fascination-production.up.railway.app/login', {
+            //   method: 'POST',
+            //   headers: { 'Content-Type': 'application/json' },
+
+            const res = await fetch(`${BACKEND_API_URL}/login`, {
               method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
+              headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, password }),
             });
 
-            if (!loginResponse.ok) {
-              throw new Error("Login failed. Please check your credentials.");
+            const data = await res.json();
+
+            if (!res.ok) {
+              showPopup(data.error || "Login gagal", "error"); // Ganti alert dengan showPopup
+              return;
             }
 
-            // Ambil token dari respons backend
-            const { token } = await loginResponse.json();
-
-            // Simpan token di localStorage
-            localStorage.setItem("authToken", token);
-            console.log("Token disimpan:", token); // Debugging log
-
-            // Redirect ke halaman utama setelah login berhasil
-            alert("Login berhasil!");
+            localStorage.setItem("user", JSON.stringify(data.user));
+            showPopup("Login berhasil!", "success"); // Ganti alert dengan showPopup
             window.location.hash = "/";
           } catch (err) {
-            console.error(err.message);
-            alert("Login gagal. Silakan periksa email dan password Anda.");
+            showPopup("Terjadi kesalahan saat login", "error"); // Ganti alert dengan showPopup
+            console.error(err);
           }
         } else {
           alert("Email dan password harus diisi.");
-        }
-
-        try {
-          // const res = await fetch('https://delightful-fascination-production.up.railway.app/login', {
-          //   method: 'POST',
-          //   headers: { 'Content-Type': 'application/json' },
-
-          const res = await fetch(`${BACKEND_API_URL}/login`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, password }),
-          });
-
-          const data = await res.json();
-
-          if (!res.ok) {
-            showPopup(data.error || "Login gagal", "error"); // Ganti alert dengan showPopup
-            return;
-          }
-
-          localStorage.setItem("user", JSON.stringify(data.user));
-          showPopup("Login berhasil!", "success"); // Ganti alert dengan showPopup
-          window.location.hash = "/";
-        } catch (err) {
-          showPopup("Terjadi kesalahan saat login", "error"); // Ganti alert dengan showPopup
-          console.error(err);
         }
       });
     }

@@ -1,13 +1,13 @@
-
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import { createClient } from "@supabase/supabase-js";
 import { showPopup } from "../components/popup.js";
 
-const BACKEND_API_URL = process.env.BACKEND_API_URL;
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey =process.env.SUPABASE_ANON_KEY;
+const supabaseKey = process.env.SUPABASE_ANON_KEY;
 export const supabase = createClient(supabaseUrl, supabaseKey);
+
+const BASE_URL = process.env.BACKEND_API_URL;
 
 // Fungsi upload gambar ke Supabase Storage
 const uploadImageToSupabase = async (file, filename) => {
@@ -95,7 +95,7 @@ export const setupAnalysisEvents = () => {
   const diagnosisInfo = document.getElementById("diagnosis-info");
 
   let uploadedImage = "";
-
+  let uploadedImageUrl = ""; // Untuk menyimpan URL gambar yang diupload
 
   // Tampilkan preview saat upload
   const showPreview = (file) => {
@@ -104,87 +104,88 @@ export const setupAnalysisEvents = () => {
       previewImage.src = e.target.result;
       uploadedImage = e.target.result;
 
-      previewBox.classList.remove('hidden');
-      changeBtn.classList.remove('hidden');
-      label.classList.add('hidden');
-      cameraBtn.classList.add('full-width');
+      previewBox.classList.remove("hidden");
+      changeBtn.classList.remove("hidden");
+      label.classList.add("hidden");
+      cameraBtn.classList.add("full-width");
     };
     reader.readAsDataURL(file);
   };
 
   // Input file manual
-  console.log('Menambahkan event listener ke photo-input');
-  fileInput.addEventListener('change', (e) => {
-    console.log('File dipilih:', e.target.files[0]);
+  console.log("Menambahkan event listener ke photo-input");
+  fileInput.addEventListener("change", (e) => {
+    console.log("File dipilih:", e.target.files[0]);
     if (e.target.files.length > 0) {
       showPreview(e.target.files[0]);
     }
   });
 
   // Tombol ganti gambar
-  changeBtn.addEventListener('click', () => {
-    fileInput.value = '';
-    uploadedImage = '';
-    previewImage.src = '';
-    previewBox.classList.add('hidden');
-    changeBtn.classList.add('hidden');
-    label.classList.remove('hidden');
-    cameraBtn.classList.remove('full-width');
+  changeBtn.addEventListener("click", () => {
+    fileInput.value = "";
+    uploadedImage = "";
+    previewImage.src = "";
+    previewBox.classList.add("hidden");
+    changeBtn.classList.add("hidden");
+    label.classList.remove("hidden");
+    cameraBtn.classList.remove("full-width");
   });
 
   // Drag & Drop
-  dropArea.addEventListener('dragover', (e) => {
+  dropArea.addEventListener("dragover", (e) => {
     e.preventDefault();
-    dropArea.classList.add('dragover');
+    dropArea.classList.add("dragover");
   });
 
-  dropArea.addEventListener('dragleave', () => {
-    dropArea.classList.remove('dragover');
+  dropArea.addEventListener("dragleave", () => {
+    dropArea.classList.remove("dragover");
   });
 
-  dropArea.addEventListener('drop', (e) => {
+  dropArea.addEventListener("drop", (e) => {
     e.preventDefault();
-    dropArea.classList.remove('dragover');
+    dropArea.classList.remove("dragover");
 
     const files = e.dataTransfer.files;
     if (files.length > 0) {
       fileInput.files = files;
 
-      const event = new Event('change', { bubbles: true });
+      const event = new Event("change", { bubbles: true });
       fileInput.dispatchEvent(event);
     }
   });
 
   // Submit Analisis
   submitBtn.addEventListener("click", async () => {
-    const file = document.getElementById("photo-input").files[0];
-    if (!file) {
-      showPopup("Please upload a photo first.", "error");
+    if (!fileInput.files.length) {
+      alert("Please upload a photo first.");
       return;
     }
 
+    const file = fileInput.files[0];
+
     resultSection.classList.remove("hidden");
     previewBoxResult.innerHTML = `
-    <img src="${uploadedImage}" alt="Result" style="max-width:100%; border-radius: 4px;" />
+    <img src="${previewImage.src}" alt="Result" style="max-width:100%; border-radius: 4px;" />
   `;
 
-    const formData = new FormData();
-    formData.append("image", file);
-
     try {
-      // const res = await fetch("https://delightful-fascination-production.up.railway.app/predict", {
-      const res = await fetch(`${BACKEND_API_URL}/predict`, {
+      const formData = new FormData();
+      formData.append("image", file); // Sesuai dengan key yang diharapkan backend
+
+      const res = await fetch(`${BASE_URL}/predict`, {
         method: "POST",
-        body: formData, // Kirim form-data
+        body: formData, // multipart/form-data dikirim otomatis oleh browser
       });
 
       if (!res.ok) throw new Error("Failed to fetch prediction");
 
       const data = await res.json();
 
-      // Tampilkan hasil prediksi, penjelasan, dan pengobatan
+      uploadedImageUrl = previewImage.src; // untuk ditampilkan saja, bukan dikirim ke BE
+
       diagnosisInfo.innerHTML = `
-      <p><strong>Detected Condition:</strong><br> ${data.prediction}</p>
+      <p><strong>Detected Condition:</strong><br> ${data.label}</p>
       <p><strong>Explanation:</strong><br> ${data.explanation}</p>
       <p><strong>Suggested Treatment:</strong><br> ${data.treatment}</p>
     `;
@@ -207,66 +208,6 @@ export const setupAnalysisEvents = () => {
       showPopup("User tidak ditemukan. Silakan login ulang.", "error");
       // alert("User tidak ditemukan. Silakan login ulang.");
       return;
-    }
-    if (!uploadedImage) {
-      alert("Please upload a photo first.");
-      return;
-    }
-
-    try {
-      const authToken = localStorage.getItem("authToken");
-      if (!authToken) {
-        alert("Anda belum login. Silakan login terlebih dahulu.");
-        return;
-      }
-
-      // Kirim file ke backend untuk analisis
-      const formData = new FormData();
-      formData.append("image", fileInput.files[0]); // Gunakan key "image" sesuai dengan yang diharapkan backend
-
-      const analyzeResponse = await fetch("http://localhost:9001/analyze", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${authToken}`, // Gunakan token dari localStorage
-        },
-        body: formData, // FormData akan secara otomatis menetapkan Content-Type
-      });
-
-      if (!analyzeResponse.ok) {
-        throw new Error("Failed to analyze image");
-      }
-
-      const { data } = await analyzeResponse.json();
-      const { disease } = data;
-      console.log("Analysis result:", data);
-
-      // Ambil explanation dan treatment dari tabel dataDiseases
-      const diseaseInfoResponse = await fetch(
-        `http://localhost:9001/disease-info?disease=${encodeURIComponent(disease)}`
-      );
-
-      if (!diseaseInfoResponse.ok) {
-        throw new Error("Failed to fetch disease information");
-      }
-
-      const { data: diseaseInfo } = await diseaseInfoResponse.json();
-
-      // Tampilkan hasil diagnosa
-      resultSection.classList.remove("hidden");
-      previewBoxResult.innerHTML = `
-        <img src="${uploadedImage}" alt="Result" style="max-width:100%; border-radius: 4px;" />
-      `;
-
-      // Update informasi diagnosa
-      const diagnosisInfo = document.getElementById("diagnosis-info");
-      diagnosisInfo.innerHTML = `
-        <p><strong>Detected Condition:</strong><br> ${disease}</p>
-        <p><strong>Explanation:</strong><br> ${diseaseInfo.explanation}</p>
-        <p><strong>Suggested Treatment:</strong><br> ${diseaseInfo.treatment}</p>
-      `;
-    } catch (err) {
-      console.error(err.message);
-      alert("An error occurred. Please try again.");
     }
 
     const file = document.getElementById("photo-input").files[0];
@@ -303,7 +244,7 @@ export const setupAnalysisEvents = () => {
     };
 
     try {
-      const res = await fetch(`${BACKEND_API_URL}/history`, {
+      const res = await fetch(`${BASE_URL}/history`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -317,7 +258,10 @@ export const setupAnalysisEvents = () => {
       // alert("Saved to profile successfully!");
     } catch (err) {
       console.error("Error saving to profile:", err); // ← PENTING!
-      showPopup("Failed to save: " + (err.message || JSON.stringify(err)), "error");
+      showPopup(
+        "Failed to save: " + (err.message || JSON.stringify(err)),
+        "error",
+      );
       // alert("Gagal menyimpan: " + (err.message || JSON.stringify(err)));
     }
 
@@ -331,6 +275,6 @@ export const setupAnalysisEvents = () => {
     cameraBtn.classList.remove("full-width");
     resultSection.classList.add("hidden");
   });
-}
+};
 
 export default Analysis;

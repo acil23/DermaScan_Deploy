@@ -143,6 +143,9 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 [hidden]:where(:not([hidden='until-found'])) {
   display: none !important;
 }
+.visible {
+  visibility: visible;
+}
 .absolute {
   position: absolute;
 }
@@ -251,6 +254,9 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 .inline-flex {
   display: inline-flex;
 }
+.table\! {
+  display: table !important;
+}
 .h-5 {
   height: calc(var(--spacing) * 5);
 }
@@ -319,6 +325,9 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 }
 .transform {
   transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.resize {
+  resize: both;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -633,6 +642,9 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 }
 .filter {
   filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.filter\! {
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
 }
 .backdrop-blur-md {
   --tw-backdrop-blur: blur(var(--blur-md));
