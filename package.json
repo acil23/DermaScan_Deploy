@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "webpack.common.js",
   "description": "",
+  "homepage": "https://acil23.github.io/DermaScan_Deploy",
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
     "start-dev": "webpack serve --config ./webpack.dev.js",
