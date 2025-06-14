@@ -16,17 +16,17 @@ const Home = () => {
 
         <section class="features-section">
           <div class="feature-box" id="feature-analysis">
-            <img src="/assets/analysis-icon.png" alt="Skin Analysis" />
+            <img src="assets/analysis-icon.png" alt="Skin Analysis" />
             <h3>Skin Analysis</h3>
             <p>Upload a skin photo for instant condition detection and guidance.</p>
           </div>
           <div class="feature-box" id="feature-education">
-            <img src="/assets/education.png" alt="Education" />
+            <img src="assets/education.png" alt="Education" />
             <h3>Education</h3>
             <p>Learn about various skin diseases and how to manage them.</p>
           </div>
           <div class="feature-box" id="feature-history">
-            <img src="/assets/history.png" alt="Diagnosis History" />
+            <img src="assets/history.png" alt="Diagnosis History" />
             <h3>Diagnosis History</h3>
             <p>Access previous diagnoses and treatment suggestions anytime.</p>
           </div>

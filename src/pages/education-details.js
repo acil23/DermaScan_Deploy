@@ -33,7 +33,7 @@ const EducationDetails = async () => {
   let disease;
   let diseasesData = [];
   try {
-    const response = await fetch("/data/diseases-data.json");
+    const response = await fetch("data/diseases-data.json");
     if (!response.ok) throw new Error("Gagal mengambil data");
     diseasesData = await response.json();
     disease = diseasesData.find((d) => d.id === diseaseId);

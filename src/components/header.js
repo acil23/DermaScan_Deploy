@@ -4,7 +4,7 @@ const Header = () => {
   return `
     <header>
       <div style="display: flex; align-items: center;">
-        <img src="./assets/logo3.png" alt="Logo" />
+        <img src="assets/logo3.png" alt="Logo" />
         <span class="logo">DermaScan</span>
       </div>
       <button class="hamburger" id="hamburger-menu">☰</button>

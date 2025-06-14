@@ -40,7 +40,7 @@ const Analysis = () => {
             <div class="upload-box" id="upload-box">
               <input type="file" id="photo-input" accept="image/*" hidden />
               <label for="photo-input" class="upload-label" id="drop-area">
-                <img src="/assets/upload-icon.png" alt="Upload" />
+                <img src="assets/upload-icon.png" alt="Upload" />
                 <p><span>Drag & Drop</span> or <span class="browse">Browse</span> to upload</p>
               </label>
               <div class="preview-box hidden" id="preview-box">
@@ -48,7 +48,7 @@ const Analysis = () => {
               </div>
               <div class="button-group" id="upload-buttons">
                 <button id="open-camera" class="camera-btn">
-                  <img src="/assets/camera-icon.png" alt="Camera Icon" />
+                  <img src="assets/camera-icon.png" alt="Camera Icon" />
                 </button>
 
                 <div class="button-row">

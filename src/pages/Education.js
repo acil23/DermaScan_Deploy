@@ -66,7 +66,7 @@ const initFilterEventListeners = () => {
 const Education = async () => {
   if (!hasFetchedData) {
     try {
-      const response = await fetch("/data/diseases-data.json");
+      const response = await fetch("data/diseases-data.json");
       if (!response.ok) throw new Error("Gagal mengambil data");
       allDiseases = await response.json();
       hasFetchedData = true;
