@@ -1,5 +1,3 @@
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 import { supabase } from "./skinAnalysis.js";
 import { showPopup } from "../components/popup.js";
 
@@ -8,7 +6,6 @@ const BACKEND_API_URL = process.env.BACKEND_API_URL;
 const Profile = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   return `
-    ${Header()}
     <main class="bg-gray-50 min-h-screen py-12 px-4 flex justify-center">
       <div class="w-full max-w-5xl bg-white rounded-2xl shadow-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -33,7 +30,6 @@ const Profile = () => {
 
       </div>
     </main>
-    ${Footer()}
   `;
 };
 
@@ -147,7 +143,7 @@ export const setupProfileEvents = async () => {
 };
 
 window.navigateToEditProfile = () => {
-  window.location.href = "#/EditProfile";
+  window.location.href = "#/edit-profile";
 };
 
 export default Profile;

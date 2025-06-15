@@ -1,5 +1,3 @@
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 import { createClient } from "@supabase/supabase-js";
 import { showPopup } from "../components/popup.js";
 
@@ -31,7 +29,6 @@ const uploadImageToSupabase = async (file, filename) => {
 
 const Analysis = () => {
   return `
-    ${Header()}
     <main class="analysis-container">
       <section class="inner-analysis">
         <div class="analysis-content">
@@ -72,7 +69,6 @@ const Analysis = () => {
         </div>
       </section>
     </main>
-    ${Footer()}
   `;
 };
 

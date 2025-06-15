@@ -1,9 +1,5 @@
-import Header from '../components/header.js';
-import Footer from '../components/footer.js';
-
 const Home = () => {
   return `
-    ${Header()}
     <main class="landing-container">
       <section class="Inner-landing">
         <section class="hero-section">
@@ -11,7 +7,7 @@ const Home = () => {
           <p>
             Empowering you to identify, understand, and treat skin conditions with AI-powered analysis and trusted educational content.
           </p>
-          <a href="/#/analysis" class="start-btn">Start Diagnosis</a>
+          <a href="#/analysis" class="start-btn">Start Diagnosis</a>
         </section>
 
         <section class="features-section">
@@ -51,7 +47,6 @@ const Home = () => {
         </section>
       </section>
     </main>
-    ${Footer()}
   `;
 };
 

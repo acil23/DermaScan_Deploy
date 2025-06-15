@@ -1,5 +1,3 @@
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 
 let allDiseases = [];
 let activeFilter = "All";
@@ -73,9 +71,7 @@ const Education = async () => {
     } catch (error) {
       console.error("Error fetching diseases data:", error);
       return `
-        ${Header()}
         <main class="p-8 text-center"><p class="text-red-500">Gagal memuat konten edukasi.</p></main>
-        ${Footer()}
       `;
     }
   }
@@ -101,7 +97,6 @@ const Education = async () => {
   setTimeout(initFilterEventListeners, 0);
 
   return `
-    ${Header()}
     <main class="p-4 md:p-6 lg:p-8 bg-gray-100 min-h-screen">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-8 filter-buttons-container">
@@ -112,7 +107,6 @@ const Education = async () => {
         </div>
       </div>
     </main>
-    ${Footer()}
   `;
 };
 

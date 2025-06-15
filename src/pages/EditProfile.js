@@ -1,9 +1,6 @@
-import Header from '../components/header.js';
-import Footer from '../components/footer.js';
 
 const EditProfile = () => {
   return `
-    ${Header()}
     <main class="bg-[#F5F5F5] min-h-screen py-12 px-4 flex justify-center">
       <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-2xl">
         <div class="text-center mb-6">
@@ -34,7 +31,6 @@ const EditProfile = () => {
         </form>
       </div>
     </main>
-    ${Footer()}
   `;
 };
 

@@ -1,5 +1,3 @@
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 
 // FUNGSI BANTUAN: Untuk merender satu bagian (seperti Gejala, Penyebab, dll)
 const renderSection = (title, items) => {
@@ -44,14 +42,12 @@ const EducationDetails = async () => {
   if (!disease) {
     // ... (Kode 'Tidak Ditemukan' tetap sama)
     return `
-      ${Header()}
       <main class="bg-gray-50 min-h-screen">
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <a href="#/education" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">← Kembali ke List Penyakit</a>
           <div class="text-center mt-10"><h1 class="text-3xl font-bold">Penyakit Tidak Ditemukan</h1></div>
         </div>
       </main>
-      ${Footer()}
     `;
   }
 
@@ -73,7 +69,6 @@ const EducationDetails = async () => {
     .join("");
 
   return `
-    ${Header()}
     <div class="header-article pl-6 bg-white py-3">
       <a href="#/education" class="inline-flex items-center text-sm text-gray-700 hover:text-blue-600 font-bold">
         <svg class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
@@ -117,7 +112,6 @@ const EducationDetails = async () => {
         </div>
       </div>
     </main>
-    ${Footer()}
   `;
 };
 

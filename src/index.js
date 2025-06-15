@@ -51,15 +51,6 @@ window.addEventListener("hashchange", () => {
   }, 100);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburgerMenu = document.getElementById("hamburger-menu");
-  const navLinks = document.getElementById("nav-links");
-
-  hamburgerMenu.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-});
-
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker

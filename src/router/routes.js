@@ -1,3 +1,4 @@
+import renderPage from "../utils/renderPage.js";
 import Home from "../pages/Home.js";
 import Analysis, { setupAnalysisEvents } from "../pages/skinAnalysis.js";
 import EducationPage from "../pages/Education.js";
@@ -14,8 +15,12 @@ const routes = {
   "/education": { render: EducationPage },
   "/profile": { render: Profile, setup: setupProfileEvents },
   "/about": { render: About },
-  "/login": { render: LoginPage, setup: setupLoginForm },
-  "/register": { render: RegisterPage, setup: setupRegisterForm },
+  "/login": { render: LoginPage, setup: setupLoginForm, layout: false },
+  "/register": {
+    render: RegisterPage,
+    setup: setupRegisterForm,
+    layout: false,
+  },
   "/edit-profile": { render: EditProfile },
 };
 
@@ -35,25 +40,18 @@ const router = async () => {
     return;
   }
 
-  if (document.startViewTransition) {
-    document.startViewTransition(async () => {
-      appElement.innerHTML = '<p class="text-center p-8">Loading page...</p>';
-      const viewHtml = await viewObj.render();
-      appElement.innerHTML = viewHtml;
-
-      if (typeof viewObj.setup === "function") {
-        viewObj.setup();
-      }
-    });
-  } else {
-    // Fallback jika browser belum mendukung
-    appElement.innerHTML = '<p class="text-center p-8">Loading page...</p>';
-    const viewHtml = await viewObj.render();
-    appElement.innerHTML = viewHtml;
-
+  const doRender = async () => {
+    const useLayout = viewObj.layout !== false; // default true
+    await renderPage(viewObj.render, useLayout); // ✅ kirim `layout`
     if (typeof viewObj.setup === "function") {
       viewObj.setup();
     }
+  };
+
+  if (document.startViewTransition) {
+    document.startViewTransition(doRender);
+  } else {
+    await doRender();
   }
 };
 
