@@ -37,10 +37,10 @@ function renderDiagnosis(title, date, desc, imagePath, id) {
   return `
     <div class="relative bg-white/80 backdrop-blur-md p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg hover:ring-1 hover:ring-indigo-300 transition group overflow-hidden">
       <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-400 to-purple-400 rounded-l-xl"></div>
-      <div class="flex items-start gap-4 pl-4">
-        <img src="${imagePath}" alt="${title}" class="w-20 h-20 object-cover rounded-lg border border-gray-300 shadow-sm group-hover:scale-105 transition" />
-        <div>
-          <p class="text-lg font-semibold text-gray-800">${title} 
+      <div class="flex flex-col sm:flex-row items-start gap-4 pl-4">
+        <img src="${imagePath}" alt="${title}" class="w-20 h-20 sm:w-20 sm:h-20 w-full max-w-[80px] object-cover rounded-lg border border-gray-300 shadow-sm group-hover:scale-105 transition" />
+        <div class="flex-1 max-w-full">
+          <p class="text-lg font-semibold text-gray-800">${title}
             <span class="text-xs text-gray-500 ml-2">${date}</span>
           </p>
           <p class="text-sm text-gray-600 mt-1 leading-relaxed">${desc}</p>

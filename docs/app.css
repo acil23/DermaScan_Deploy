@@ -323,6 +323,9 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 .max-w-7xl {
   max-width: var(--container-7xl);
 }
+.max-w-\[80px\] {
+  max-width: 80px;
+}
 .max-w-full {
   max-width: 100%;
 }
@@ -852,14 +855,29 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
     outline-style: none;
   }
 }
+.sm\:h-20 {
+  @media (width >= 40rem) {
+    height: calc(var(--spacing) * 20);
+  }
+}
 .sm\:h-72 {
   @media (width >= 40rem) {
     height: calc(var(--spacing) * 72);
   }
 }
+.sm\:w-20 {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 20);
+  }
+}
 .sm\:grid-cols-2 {
   @media (width >= 40rem) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.sm\:flex-row {
+  @media (width >= 40rem) {
+    flex-direction: row;
   }
 }
 .sm\:p-8 {
