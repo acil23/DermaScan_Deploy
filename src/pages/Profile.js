@@ -13,7 +13,7 @@ const Profile = () => {
         <aside class="col-span-1 flex flex-col items-center text-center">
           <img src="assets/avatar.png" alt="Avatar" class="w-24 h-24 rounded-full object-cover mb-4 border border-gray-300" />
           <h2 class="text-lg font-semibold text-gray-800">${user.name}</h2>
-          <p class="text-sm text-gray-500 mb-4">jordan@email.com</p>
+          <p class="text-sm text-gray-500 mb-4">${user.email}</p>
           <div class="flex flex-col gap-2 w-full px-6">
             <button onclick="navigateToEditProfile()" id="edit-profile-btn" class="bg-blue-600 text-white text-sm py-2 rounded-md hover:bg-blue-700 transition">Edit Profile</button>
             <button id="logout-btn" class="bg-gray-200 text-gray-700 text-sm py-2 rounded-md hover:bg-gray-300 transition">Logout</button>
@@ -68,7 +68,7 @@ export const setupProfileEvents = async () => {
       .select("*")
       .eq("user_id", user.id) // ← ini yang diganti
       .order("timestamp", { ascending: false });
-      console.log(history.length);
+    console.log(history.length);
 
     if (error) throw error;
 
@@ -90,7 +90,7 @@ export const setupProfileEvents = async () => {
           date,
           entry.explanation || "No explanation provided.",
           entry.image_url || "../assets/logo3.png",
-          entry.id, // jika kamu ingin pakai tombol delete
+          entry.id // jika kamu ingin pakai tombol delete
         );
       })
       .join("");
@@ -105,19 +105,31 @@ export const setupProfileEvents = async () => {
 
       if (!confirm("Are you sure you want to delete this entry?")) return;
 
+      const originalText = button.innerHTML;
+      button.innerHTML = `<span class="flex items-center gap-1">
+    <svg class="animate-spin h-4 w-4 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+    </svg>
+    Deleting...
+  </span>`;
+      button.disabled = true;
+
       try {
-        // const res = await fetch(`https://delightful-fascination-production.up.railway.app/history/${id}`, {
         const res = await fetch(`${BACKEND_API_URL}/history/${id}`, {
           method: "DELETE",
         });
 
         if (!res.ok) throw new Error("Failed to delete");
 
-        // Refresh halaman (atau bisa fetch ulang data)
-        setupProfileEvents();
+        setupProfileEvents(); // refresh ulang list
       } catch (err) {
         console.error("Error deleting entry:", err);
         showPopup("Failed to delete entry", "error");
+
+        // Restore tombol
+        button.innerHTML = originalText;
+        button.disabled = false;
       }
     });
   });

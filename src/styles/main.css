@@ -5,12 +5,10 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-
-
 body {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   color: #111111;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -78,7 +76,7 @@ header .logo {
 
 #login-page-btn,
 #register-page-btn {
-  background-color: #133E87;
+  background-color: #133e87;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -88,8 +86,9 @@ header .logo {
   text-decoration: none; /* Hapus underline */
 }
 
-header .login-btn, .logout-btn{
-  background-color: #133E87;
+header .login-btn,
+.logout-btn {
+  background-color: #133e87;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -101,7 +100,8 @@ header .login-btn, .logout-btn{
   display: inline-block;
 }
 
-header .login-btn:hover, .logout-btn:hover {
+header .login-btn:hover,
+.logout-btn:hover {
   background-color: #555;
   color: #fff;
 }
@@ -155,7 +155,6 @@ p {
   color: #666;
 }
 
-
 /* === Skin Analysis Page === */
 .analysis-container {
   display: flex;
@@ -165,14 +164,14 @@ p {
   gap: 40px;
   padding: 48px 24px;
   flex-wrap: wrap;
-  background-color: #FAFAFA
+  background-color: #fafafa;
 }
 
 .inner-analysis {
   padding: 48px 24px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #FFFFFF
+  background-color: #ffffff;
 }
 
 .analysis-content {
@@ -230,14 +229,16 @@ p {
     font-size: 16px;
   }
 
-  header .login-btn, .logout-btn {
+  header .login-btn,
+  .logout-btn {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid #333;
   }
 
-  header .login-btn:hover, .logout-btn:hover {
+  header .login-btn:hover,
+  .logout-btn:hover {
     text-decoration: none;
   }
 
@@ -394,7 +395,7 @@ p {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 .upload-section h2,
@@ -536,14 +537,13 @@ button {
   height: 40px;
   padding: 0 16px;
   border-radius: 6px;
-  border: 1px solid #133E87;
+  border: 1px solid #133e87;
   font-size: 14px;
   cursor: pointer;
 }
 
-
 #submit-analysis {
-  background-color: #133E87;
+  background-color: #133e87;
   color: #fff;
   border: none;
 }
@@ -553,8 +553,8 @@ button {
   color: #fff;
 }
 
-#save-result{
-  background-color: #133E87;
+#save-result {
+  background-color: #133e87;
   color: #fff;
   border: none;
 }
@@ -573,7 +573,7 @@ button {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .result-section.hidden {
@@ -586,7 +586,7 @@ button {
 }
 
 .footer {
-  background-color: #354C6A;
+  background-color: #354c6a;
   padding: 20px 24px;
   font-size: 14px;
   color: #666;
@@ -652,10 +652,10 @@ main {
 
 /* === Landing Page Styles === */
 .landing-container {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
-.inner-landing{
+.inner-landing {
   padding: 48px 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -684,7 +684,7 @@ main {
 }
 
 .start-btn {
-  background-color: #133E87;
+  background-color: #133e87;
   color: white;
   padding: 15px 35px;
   font-size: 16px;
@@ -710,7 +710,7 @@ main {
   flex: 1;
   min-width: 280px;
   max-width: 280px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 24px;
   border-radius: 8px;
   text-align: center;
@@ -765,7 +765,9 @@ main {
   padding: 20px;
   border-radius: 8px;
   font-style: italic;
-  box-shadow: inset 0 0 0 1px #E5E5E5, 0 0 6px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    inset 0 0 0 1px #e5e5e5,
+    0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-box p {
@@ -780,11 +782,11 @@ main {
   color: #525252;
 }
 
-#search-btn{
-  background-color: #B6CAE2;
+#search-btn {
+  background-color: #b6cae2;
 }
 
-#search-input{
+#search-input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -795,7 +797,7 @@ main {
 }
 
 #edit-profile-btn {
-  background-color: #133E87;
+  background-color: #133e87;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -805,7 +807,7 @@ main {
 }
 
 #logout-btn {
-  background-color: #B6CAE2;
+  background-color: #b6cae2;
   color: #333;
   padding: 8px 16px;
   border: 2px solid #333;
@@ -828,7 +830,9 @@ main {
   gap: 12px;
   min-height: 200px;
   cursor: pointer;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .upload-box:hover {
@@ -889,7 +893,6 @@ main {
   display: none !important;
 }
 
-
 #app {
   view-transition-name: fade-page;
 }
@@ -908,13 +911,21 @@ main {
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 #disease-article-list article img {
@@ -923,4 +934,35 @@ main {
 
 .article-detail-view img {
   max-width: 100%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db; /* warna biru */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -64,7 +64,10 @@ const Analysis = () => {
               <p><strong>Explanation:</strong><br> - </p>
               <p><strong>Suggested Treatment:</strong><br> - </p>
             </div>
-            <button id="save-result">Save to Profile</button>
+            <button id="save-result" class="save-button">
+              <span class="btn-text">Save to Profile</span>
+              <span class="spinner hidden"></span>
+            </button>
           </section>
         </div>
       </section>
@@ -165,6 +168,23 @@ export const setupAnalysisEvents = () => {
     <img src="${previewImage.src}" alt="Result" style="max-width:100%; border-radius: 4px;" />
   `;
 
+    // Munculkan loading awal
+    diagnosisInfo.innerHTML = `
+    <div class="flex flex-col items-center justify-center py-4">
+      <div class="animate-spin rounded-full h-8 w-8 border-4 border-blue-500 border-t-transparent mb-2"></div>
+      <p class="text-gray-600" id="loading-text">Sedang menganalisis gambar...</p>
+    </div>
+  `;
+
+    // Timer ubah teks jika > 20 detik
+    const loadingTextEl = document.getElementById("loading-text");
+    const delayedTextTimeout = setTimeout(() => {
+      if (loadingTextEl) {
+        loadingTextEl.textContent =
+          "Masih dalam proses analisis, mohon bersabar ya 😊";
+      }
+    }, 20000); // 20 detik
+
     try {
       const formData = new FormData();
       formData.append("image", file); // Sesuai dengan key yang diharapkan backend
@@ -177,6 +197,8 @@ export const setupAnalysisEvents = () => {
       if (!res.ok) throw new Error("Failed to fetch prediction");
 
       const data = await res.json();
+
+      clearTimeout(delayedTextTimeout); // stop timer
 
       uploadedImageUrl = previewImage.src; // untuk ditampilkan saja, bukan dikirim ke BE
 
@@ -192,6 +214,9 @@ export const setupAnalysisEvents = () => {
   });
 
   saveResultBtn.addEventListener("click", async () => {
+    const btnText = saveResultBtn.querySelector(".btn-text");
+    const spinner = saveResultBtn.querySelector(".spinner");
+
     if (!uploadedImage) {
       showPopup("Please upload a photo first.", "error");
       // alert("Please upload a photo first.");
@@ -207,9 +232,14 @@ export const setupAnalysisEvents = () => {
     }
 
     const file = document.getElementById("photo-input").files[0];
+
+    saveResultBtn.disabled = true;
+    btnText.textContent = "Saving...";
+    spinner.classList.remove("hidden");
+
     const imageUrl = await uploadImageToSupabase(
       file,
-      `user-${user.id}-${Date.now()}.jpg`,
+      `user-${user.id}-${Date.now()}.jpg`
     );
 
     // Ambil info diagnosis
@@ -256,20 +286,24 @@ export const setupAnalysisEvents = () => {
       console.error("Error saving to profile:", err); // ← PENTING!
       showPopup(
         "Failed to save: " + (err.message || JSON.stringify(err)),
-        "error",
+        "error"
       );
       // alert("Gagal menyimpan: " + (err.message || JSON.stringify(err)));
-    }
+    } finally {
+      saveResultBtn.disabled = false;
+      btnText.textContent = "Save to Profile";
+      spinner.classList.add("hidden");
 
-    // Reset form
-    fileInput.value = "";
-    uploadedImage = "";
-    previewImage.src = "";
-    previewBox.classList.add("hidden");
-    changeBtn.classList.add("hidden");
-    label.classList.remove("hidden");
-    cameraBtn.classList.remove("full-width");
-    resultSection.classList.add("hidden");
+      // Reset preview dan input
+      fileInput.value = "";
+      uploadedImage = "";
+      previewImage.src = "";
+      previewBox.classList.add("hidden");
+      changeBtn.classList.add("hidden");
+      label.classList.remove("hidden");
+      cameraBtn.classList.remove("full-width");
+      resultSection.classList.add("hidden");
+    }
   });
 };
 
