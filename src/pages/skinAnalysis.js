@@ -35,7 +35,7 @@ const Analysis = () => {
           <section class="upload-section" id="upload-section">
             <h2>Upload Skin Photo</h2>
             <div class="upload-box" id="upload-box">
-              <input type="file" id="photo-input" accept="image/*" hidden />
+              <input type="file" id="photo-input" accept="image/*" capture="environment" hidden />
               <label for="photo-input" class="upload-label" id="drop-area">
                 <img src="assets/upload-icon.png" alt="Upload" />
                 <p><span>Drag & Drop</span> or <span class="browse">Browse</span> to upload</p>
@@ -95,6 +95,11 @@ export const setupAnalysisEvents = () => {
 
   let uploadedImage = "";
   let uploadedImageUrl = ""; // Untuk menyimpan URL gambar yang diupload
+
+  cameraBtn.addEventListener("click", () => {
+    showPopup("Membuka kamera...", "info");
+    fileInput.click();
+  });
 
   // Tampilkan preview saat upload
   const showPreview = (file) => {
